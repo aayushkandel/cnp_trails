@@ -1,0 +1,33 @@
+{% extends 'base/partner-dashboard-base.html'%}
+
+{% load static %}
+{% block content %}
+
+{% for message in messages%}
+{{message}}
+{% endfor %}
+
+<h2>{{ room_type.type }} - Availability Calendar</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            {% for day in days %}
+                <th>{{ day|date:"D M d" }}</th>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for day in days %}
+                <td style="padding: 5px;">
+                    Beds: <input type="number" name="beds_{{ day }}" value="{{ availabilities.day.beds_available }}" style="width:50px;"><br>
+                    Price: <input type="number" step="0.01" name="price_{{ day }}" value="{{ availabilities.day.price }}" style="width:60px;">
+                </td>
+            {% endfor %}
+        </tr>
+    </table>
+    <button type="submit">Save Changes</button>
+</form>
+
+
+{% endblock content %}

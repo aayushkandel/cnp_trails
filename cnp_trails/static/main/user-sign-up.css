@@ -1,0 +1,321 @@
+
+
+
+.register{
+  margin-top: 5rem;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  /* background-color: aqua; */
+}
+.otp-hr{
+  border: .5px solid gray;
+  width: 120rem;
+  
+}
+.register-form{
+width: 50rem;
+height: 60rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 3rem;
+/* background-color: red; */
+box-shadow: 0 2px 6px rgb(53, 53, 53);
+transition: all 0.3s ease;
+}
+
+.register-form form{
+  width: 45rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: cente;
+  padding-top: 2rem;
+}
+
+.fullname{
+  height: 3rem;
+  width: 40rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173) ;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.username{
+  height: 3rem;
+  width: 40rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173) ;
+  font-size: 1.5rem;
+  outline: none;
+}
+.email{
+  height: 3rem;
+  width: 40rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173) ;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.phone{
+  height: 3rem;
+  width: 40rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173) ;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.password1{
+  height: 3rem;
+  width: 40rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173);
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.password2{
+  height: 3rem;
+  width: 40rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173) ;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+button{
+  height: 4rem;
+  width: 40rem;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  border: none;
+  background-color: green;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(5, 87, 5);
+}
+
+.text{
+  font-size: 5rem;
+  font-weight: 700;
+  color: green;
+  width: 45rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+.login-title{
+  width: 30rem;
+  font-size: 1.3rem;
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+
+.otp-container{
+  margin-top: 15rem;
+  width: 40rem;
+  height: 35rem;
+  
+}
+
+.otp-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 23rem;
+  width: 40rem;
+  box-shadow: 0 0 2px gray;
+  border-radius: 1rem;
+}
+  .otp-text{
+      font-size: 3rem;
+  font-weight: 700;
+  color: green;
+  width: 40rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+margin-top: 1rem;
+  }
+  .form-control{
+  height: 3rem;
+  width: 22rem;
+  margin-left: 1rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173);
+  font-size: 1.5rem;
+  outline: none;
+  }
+  .verify{
+     height: 4rem;
+  width: 35rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  border: none;
+  background-color: green;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.verify:hover{
+  background-color: rgb(5, 87, 5);
+}
+
+.form-group{
+  display: flex;
+  justify-content: start;
+}
+.resend{
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.error-text {
+  color:red;
+  font-size: 1.2rem;
+  margin-top: 4px;
+  list-style: none;
+  margin-left: 3rem;
+}
+
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.message.info { color: #17a2b8; }    /* Blue */
+.message.success { color: #28a745; } /* Green */
+.message.error { color: #dc3545; }   /* Red */
+.message.warning { color: #ffc107; }
+
+.update{
+  display: flex;
+  margin-top: 10rem;
+  width: 110rem;
+  justify-content: space-between;
+}
+.info-update{
+  width: 50rem;
+  box-shadow: 0 0 3px gray;
+}
+
+.info-text{
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: green;
+  width: 45rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+.info-update button{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.password-update{
+  width: 50rem;
+  box-shadow: 0 0 3px gray;
+}
+
+.old_password{
+  height: 3rem;
+  width: 40rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173);
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.new_password1{
+  height: 3rem;
+  width: 40rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173);
+  font-size: 1.5rem;
+  outline: none;
+}
+.new_password2{
+  height: 3rem;
+  width: 40rem;
+  margin-left: 3rem;
+  border: none;
+  border-bottom: 2px solid rgb(177, 173, 173);
+  font-size: 1.5rem;
+  outline: none;
+}
+.password-update button{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.success-update{
+  color: green;
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.error-msg{
+  color: red;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
+@media(min-width:1536px){
+
+}
+
+@media(min-width:1280px ) and (max-width:1535px){
+
+}
+
+@media(min-width:1024px ) and (max-width:1279px){
+
+}
+
+@media(min-width:768px ) and (max-width:1023px){
+
+}
+
+@media(min-width:481px ) and (max-width:767px){
+
+}
+
+@media(max-width:480px){
+
+  
+}
+
+

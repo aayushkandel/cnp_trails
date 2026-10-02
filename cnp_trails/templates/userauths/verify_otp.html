@@ -1,0 +1,35 @@
+{% extends "base/base.html" %} {% block content %}
+<hr class="otp-hr" />
+<div class="otp-container">
+  <div class="otp-box">
+    <h2 class="otp-text">OTP Verification</h2>
+
+    <form action="{% url 'userauths:verify-otp' %}" method="POST" novalidate>
+      {% csrf_token %} {% if messages %}
+  <div class="messages">
+    {% for message in messages %}
+      <div class="message {{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+      <div class="form-group">
+        <input
+          type="text"
+          name="otp"
+          maxlength="6"
+          class="form-control"
+          placeholder="Enter 6 digit OTP "
+        />
+       
+      </div>
+      <button type="submit" class="verify" name="verify_otp">Verify OTP</button>
+    </form>
+     <form method="POST" action="{% url 'userauths:resend-otp' %}">
+    {% csrf_token %}
+    <button type="submit" class="resend">Resend OTP</button>
+</form>
+  </div>
+</div>
+{% endblock %}

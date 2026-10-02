@@ -1,0 +1,315 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #f5f0dc;
+  font-family:sans-serif;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar{
+    width: 80%;
+    height: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    
+   
+}
+
+.Logo-img{
+  width: 7rem;
+  height: 7rem;
+}
+
+.login{
+    width: 15%;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.login-icon{
+    padding-left: .2rem;
+    
+    color:#63687A ;
+    font-weight: 800;
+}
+.login-text{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #63687A;
+    width: 100%;
+   
+}
+.login a{
+    text-decoration: none;
+}
+.log-in{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+    font-weight: 500;
+}
+.log-in::after{
+    content:'' ;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #074300;
+    transition: all 0.2s ease;
+    transform:  translateX(-50%);
+    text-decoration: none;
+}
+.log-in:hover::after{
+    width: 100%;
+}
+
+.register-box{
+margin-top: 3rem;
+width: 30rem;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 2rem;
+/* background-color: red; */
+box-shadow: 0 2px 6px rgb(53, 53, 53);
+transition: all 0.3s ease;
+margin-bottom: 3rem;
+padding-bottom: 2rem;
+}
+.register-box h2{
+margin-top: 1rem;
+width: 20rem;
+
+color: green;
+text-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+
+}
+
+.register-box form{
+    margin-top:2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.partner_type{
+    margin-top: 1rem;
+    width: 20rem;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    color: gray;
+    font-size: 1rem;
+}
+
+.operator_name{
+    margin-top: 1.5rem;
+      width: 20rem;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    color: gray;
+    outline: none;
+    font-size: 1rem;
+}
+
+.company_name{
+     margin-top: 1.5rem;
+      width: 20rem;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    color: gray;
+    font-size: 1rem;
+    outline: none;
+}
+
+.email{
+     margin-top: 1.5rem;
+      width: 20rem;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    color: gray;
+    font-size: 1rem;
+    outline: none;
+
+}
+.phone{
+     margin-top: 1.5rem;
+      width: 20rem;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    color: gray;
+    font-size: 1rem;
+    outline: none;
+
+}
+.activity_type{
+     margin-top: 1.5rem;
+      width: 20rem;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    color: gray;
+    font-size: 1rem;
+}
+.registration_certificate{
+      margin-top: 1.5rem;
+      width: 20rem;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    color: gray;
+    font-size: 1rem;
+        outline: none;
+
+}
+.password1{
+      margin-top: 1.5rem;
+      width: 20rem;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    color: gray;
+    font-size: 1rem;
+    outline: none;
+
+}
+.password2{
+      margin-top: 1.5rem;
+      width: 20rem;
+    border: none;
+    border-bottom: 2px solid rgb(177, 173, 173);
+    color: gray;
+    font-size: 1rem;
+    outline: none;
+    
+}
+.register-box button{
+    width: 20rem;
+    background-color: green;
+    height: 3rem;
+    margin-top: 2rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f5f0dc;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+.register-box button:hover{
+    background-color: rgb(5, 87, 5);
+}
+
+.signup{
+    width: 15%;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.signup-icon{
+    padding-left: .4rem;
+    color:green ;
+    font-weight: 800;
+}
+
+.signup-text{
+    font-size: 1rem;
+    text-decoration: none;
+    color: green;
+    width: 100%;
+   
+}
+.signup a{
+    text-decoration: none;
+}
+.sign-up{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+    font-weight: 500;
+}
+.sign-up::after{
+    content:'' ;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #074300;
+    transition: all 0.2s ease;
+    transform:  translateX(-50%);
+    text-decoration: none;
+}
+.sign-up:hover::after{
+    width: 100%;
+}
+
+.login-box{
+margin-top: 3rem;
+width: 30rem;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 2rem;
+border-radius: 2rem;
+/* background-color: red; */
+box-shadow: 0 2px 6px rgb(53, 53, 53);
+transition: all 0.3s ease;
+}
+.login-box h2{
+margin-top: 1rem;
+color: green;
+text-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+.login-box form{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-box button{
+    margin-top: 2rem;
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    background-color: green;
+    border-radius: 1rem;
+    color: #f5f0dc;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+
+
+}
+
+.login-box button:hover{
+    background-color: rgb(5, 87, 5);
+}
+
+
+
+.errorlist {
+  color: red;
+  font-size: .8rem;
+  margin-top: 4px;
+  list-style: none;
+}
+

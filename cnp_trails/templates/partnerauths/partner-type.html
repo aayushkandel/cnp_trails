@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <h2>Select Partner Type</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <!-- Back to partner type -->
+
+
+<!-- Redirect to partner register (if used in template) -->
+<a href="{% url 'partner-register' %}" class="btn btn-primary">Next</a>
+
+  </form>
+</div>

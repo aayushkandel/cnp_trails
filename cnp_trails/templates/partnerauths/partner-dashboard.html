@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% csrf_token %}
+  <title>Partner Dashboard</title>
+</head>
+<body>
+  <h2>Welcome, {{ partner.company_name }}</h2>
+
+  {% if messages %}
+    <ul>
+      {% for message in messages %}
+          {{ message }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <p><strong>Email:</strong> {{ partner.email }}</p>
+  <p><strong>Phone:</strong> {{ partner.phone }}</p>
+
+  <p><strong>Status:</strong>
+    {% if partner.is_verified %}
+      <span style="color: green;">Approved ✅</span>
+    {% else %}
+      <span style="color: red;">Pending Approval ⏳</span>
+    {% endif %}
+  </p>
+
+  <a href="{% url 'partnerauths:partner-logout' %}">Logout</a>
+</body>
+</html>

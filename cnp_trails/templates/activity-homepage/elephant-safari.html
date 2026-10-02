@@ -1,0 +1,49 @@
+{% extends 'base/base.html'%}
+{% load static %}
+
+ {% block content %}
+    <div class="listing">
+      {% for activity in activity %}
+      {% if activity.slug %}
+      <a href="{% url 'activity:activity_detail' activity.slug %}"> <div class="activity-lists">
+        <div class="card">
+  <!-- Badge -->
+  <span class="badge"> {{activity.status}}</span>
+ 
+  <!-- Favorite Button -->
+  <button class="favorite">♥</button>
+  
+  <!-- Image -->
+ <div class="thumbnail"></div><img src="{{activity.image.url}}" alt="Jeep Safari" class="card-image">
+  
+  <!-- Content -->
+  <div class="card-body">
+    <h2 class="activity-name"> {{activity.name}}</h2>
+    <p class="activity-mobile"> {{activity.mobile}}</p>
+    <p class="activity-address"> {{activity.address}}</p>
+    <p class="activity-email"> {{activity.email}}</p>
+    
+    <!-- Rating -->
+    <div class="rating">
+      <span class="stars">★★★★☆</span>
+      <span class="score">4.9</span>
+      <span class="reviews">(13,781)</span>
+    </div>
+    
+    <!-- Price -->
+    <div class="price">
+       Starting from     <span class="old-price"> $36</span>
+      <span class="new-price">$27</span>
+      <span class="per">per person</span>
+    </div>
+  </div>
+</div>
+
+      </div>
+      </a>
+  {% else %}
+ {{ activity.name }} (No link, missing slug)
+ {% endif %}
+{% endfor %}
+      </div>
+  {% endblock content %}

@@ -1,0 +1,69 @@
+{% extends 'base/base.html'%}
+
+{% load static %}
+{% block content %}
+<div class="update">
+<div class="info-update">
+<h3 class="info-text">Update Profile Info</h3>
+
+ {% if info_message %}
+    {% if 'successfully' in info_message %}
+      <div class="success-update">{{ info_message }}</div>
+    
+    {% endif %}
+  {% endif %}
+
+
+<form method="POST" novalidate>
+    {% csrf_token %}
+     {% for error in user_form.full_name.errors %}
+          <div class="error-msg">{{ error }}</div>
+        {% endfor %}
+    {{ user_form.full_name }}
+     {% for error in user_form.email.errors %}
+          <div class="error-msg">{{ error }}</div>
+        {% endfor %}
+    {{ user_form.email }}
+    {% for error in user_form.phone.errors %}
+          <div class="error-msg">{{ error }}</div>
+        {% endfor %}
+    {{ user_form.phone }}
+   
+    <button type="submit" name="save_info">Save Info</button>
+  </form>
+
+
+</div>
+<hr>
+
+<div class="password-update">
+<h3 class="info-text">Change Password</h3>
+
+{% if password_message %}
+    {% if 'successfully' in password_message %}
+      <div class="success-update">{{ password_message }}</div>
+    
+    {% endif %}
+  {% endif %}
+
+ <form method="POST" novalidate>
+    {% csrf_token %}
+     {% for error in password_form.old_password.errors %}
+          <div class="error-msg">{{ error }}</div>
+        {% endfor %}
+    {{ password_form.old_password }}
+      {% for error in password_form.new_password1.errors %}
+          <div class="error-msg">{{ error }}</div>
+        {% endfor %}
+    {{ password_form.new_password1 }}
+    {% for error in password_form.new_password2.errors %}
+          <div class="error-msg">{{ error }}</div>
+        {% endfor %}
+    {{ password_form.new_password2 }}
+   
+    <button type="submit" name="change_password">Change Password</button>
+  </form>
+
+</div>
+</div>
+{% endblock content %}

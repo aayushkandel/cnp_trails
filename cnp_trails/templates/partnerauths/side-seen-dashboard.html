@@ -1,0 +1,17 @@
+{% extends 'base/partner-dashboard-base.html'%}
+
+{% load static %}
+{% block content %}
+        <div class="title">
+            <div class="name"> {% if partner.company_name %}
+                                                Welcome, {{ partner.company_name }}
+                                            {% else %}
+                                                Welcome, {{ partner.operator_name }}
+                                            {% endif %}</div>
+                <div class="activity-type">Activity: {{ partner.activity_type }}
+                </div>
+                <div class="listing"><a href="{% url 'partner_dashboard:update_partner_activity' partner.ppid %}">Activity Profile</a></div>
+           </div>
+        <div class="details"> 
+</div>
+{% endblock content %}

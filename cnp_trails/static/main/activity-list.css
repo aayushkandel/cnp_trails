@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #f5f0dc;
+  font-family: "GT Eesti", Arial, Helvetica, sans-serif;
+
+}
+
+
+html{
+  font-size: 62.5%;
+}
+
+
+
+.listing{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28rem,1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+}
+.activity-lists{
+height: 40rem;
+
+
+}
+.listing a{
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  width: 29rem;
+  height: 36rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.thumbnail{
+  position: absolute;
+  width: 100%;
+  height: 16rem;
+}
+.card-image{
+  position: relative;
+}
+.card img{
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    transition: border-radius, transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1); 
+}
+/* Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #1a2b49;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+/* Favorite Button */
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f5f0dc;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  z-index: 2;
+}
+.favorite:hover{
+  background-color: rgb(186, 184, 184);
+}
+
+.card-img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.2rem;
+  height: 40rem;
+}
+.activity-name{
+  font-size: 1.7rem;
+}
+.activity-mobile{
+margin-top: -2rem;
+font-size: 1.4rem;
+}
+.activity-address{
+  font-size: 1.4rem;
+}
+.activity-email{
+  font-size: 1.4rem;
+}
+
+
+/* Rating */
+.rating {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  margin-top: 1.3rem;
+}
+
+.stars {
+  color: #ffb400;
+  font-size: 2rem;
+}
+
+.score {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.reviews {
+  color: #777;
+  margin-left: 3px;
+  
+}
+
+/* Price */
+.price {
+  font-size: 1rem;
+  color: #777;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+  font-size: 1.2rem;
+  margin-left: .5rem;
+}
+
+.new-price {
+  position: absolute;
+  color: #e63946;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-left: -9rem;
+
+}
+
+.per {
+  position: absolute;
+  color: #444;
+  margin-left: -5.8rem;
+  margin-top: 2.5rem;
+}

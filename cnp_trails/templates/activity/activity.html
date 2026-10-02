@@ -1,0 +1,52 @@
+{% extends 'base/base.html'%}
+{% load static %}
+
+ {% block content %}
+       
+        <div class="app-image">
+<div class="slider">
+    <div class="slides">
+      
+      <img src="{{ MEDIA_URL }}/media/lake.jpg" alt="Image 1">
+      <img src="{{ MEDIA_URL }}/media/cnp-elephant.jpg" alt="Image 2">
+      <img src="{{ MEDIA_URL }}/media/cnpboard.jpg" alt="Image 3">
+      <img src="{{ MEDIA_URL }}/media/rhino.jpg" alt="Image 4">
+      
+    </div>
+  </div></div>
+        <div class="activity-list">
+            <div class="things-to-do">
+                <div class="things-to-do-text">Things to do </div>
+                <div class="activities">
+                    <a href="{% url 'activity:jeep_safari' %}"><div class="jeep-safari"><div class="activity-text">Jeep Sarfari</div><div class="img"><img src="{{ MEDIA_URL }}/media/jeep.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:elephant_safari' %}"> <div class="jeep-safari"><div class="activity-text">Elephant Sarafi</div><div class="img"><img src="{{ MEDIA_URL }}/media/elephant.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:jungle_walk' %}"><div class="jeep-safari"> <div class="activity-text">Jungle Walk</div> <div class="img"><img src="{{ MEDIA_URL }}/media/chitwan-jungle-walk.jpg" alt="Image 1"></div></div></a>
+                    <a href="{% url 'activity:canoe' %}"><div class="jeep-safari"> <div class="activity-text">Canoeing</div> <div class="img"><img src="{{ MEDIA_URL }}/media/canoe.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:bird_watching' %}"><div class="jeep-safari"><div class="activity-text">Bird Watching</div> <div class="img"><img src="{{ MEDIA_URL }}/media/bird-watching.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:village_tour' %}"><div class="jeep-safari"><div class="activity-text">Village Tour</div> <div class="img"><img src="{{ MEDIA_URL }}/media/Village-tour.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:side_seen' %}"><div class="jeep-safari"><div class="activity-text">Side Seen</div> <div class="img"><img src="{{ MEDIA_URL }}/media/side-seen.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:tower_night' %}"><div class="jeep-safari"><div class="activity-text">Towen Night</div> <div class="img"><img src="{{ MEDIA_URL }}/media/tower-night.jpg" alt="Image 1" ></div></div></a>
+                    
+                    
+                </div>
+            </div>
+            <div class="things-to-do">
+                <div class="things-to-do-text">Places to see</div>
+                <div class="activities">
+                    <a href="{% url 'activity:tharu_cultural_dance' %}"><div class="jeep-safari"><div class="activity-text">Tharu Cultural <div class="activity-second-text">Dance</div></div> <div class="img"><img src="{{ MEDIA_URL }}/media/tharu dance.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:wildlife_museum' %}"><div class="jeep-safari"><div class="activity-text">Wildlife Museum</div> <div class="img"><img src="{{ MEDIA_URL }}/media/museum.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:tharu_cultural_museum' %}"><div class="jeep-safari"><div class="activity-text">Tharu Cultural <div class="activity-second-text">Museum</div></div> <div class="img"><img src="{{ MEDIA_URL }}/media/tharu-museum.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:lake' %}"><div class="jeep-safari"><div class="activity-text">20000 Lake</div> <div class="img"><img src="{{ MEDIA_URL }}/media/20000 lake.jpg" alt="Image 1" ></div></div></a>
+                    <a href="{% url 'activity:ebc' %}"><div class="jeep-safari"><div class="activity-text">EBC</div> <div class="img"><img src="{{ MEDIA_URL }}/media/ebc.jpg" alt="Image 1" ></div></div></a>
+                    
+                </div>
+            </div>
+            <!-- {% for activity in activity %}
+            {% if activity.slug %}
+            <a href="{% url 'activity:activity_detail' activity.slug %}">{{ activity.name }}</a>
+            {% else %}
+        {{ activity.name }} (No link, missing slug)
+    {% endif %}
+{% endfor %} -->
+        </div>
+     {% endblock content %}
